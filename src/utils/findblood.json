@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "bloodGroup": "A+",
+    "hospital": "City Care Blood Bank",
+    "location": "Nagpur",
+    "units": 12,
+    "status": "Available"
+  },
+  {
+    "id": 2,
+    "bloodGroup": "O+",
+    "hospital": "Life Saver Blood Center",
+    "location": "Mumbai",
+    "units": 8,
+    "status": "Available"
+  },
+  {
+    "id": 3,
+    "bloodGroup": "B+",
+    "hospital": "Hope Blood Bank",
+    "location": "Pune",
+    "units": 3,
+    "status": "Limited"
+  },
+  {
+    "id": 4,
+    "bloodGroup": "AB+",
+    "hospital": "Red Drop Blood Center",
+    "location": "Nagpur",
+    "units": 5,
+    "status": "Available"
+  },
+  {
+    "id": 5,
+    "bloodGroup": "O-",
+    "hospital": "Care Foundation",
+    "location": "Delhi",
+    "units": 2,
+    "status": "Limited"
+  },
+  {
+    "id": 6,
+    "bloodGroup": "A-",
+    "hospital": "Healthy Life Blood Bank",
+    "location": "Pune",
+    "units": 7,
+    "status": "Available"
+  },
+  {
+  "id": 7,
+  "bloodGroup": "B-",
+  "hospital": "Sunrise Blood Bank",
+  "location": "Hyderabad",
+  "units": 4,
+  "status": "Available"
+},
+{
+  "id": 8,
+  "bloodGroup": "AB-",
+  "hospital": "Unity Blood Center",
+  "location": "Bengaluru",
+  "units": 1,
+  "status": "Limited"
+},
+{
+  "id": 9,
+  "bloodGroup": "O+",
+  "hospital": "Green Life Blood Bank",
+  "location": "Chennai",
+  "units": 10,
+  "status": "Available"
+}
+]

@@ -1,0 +1,89 @@
+.blood-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.blood-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    8px 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.blood-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.blood-group {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  background: #fff0f0;
+  color: #c1121f;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.available {
+  background: #e6f7ed;
+  color: #18864b;
+}
+
+.limited {
+  background: #fff3cd;
+  color: #b7791f;
+}
+
+.blood-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.location {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.units-info {
+  background: #f8f8f8;
+  padding: 13px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+
+  font-size: 14px;
+}
+
+.units-info span {
+  color: #777;
+}
+
+.units-info strong {
+  color: #c1121f;
+}

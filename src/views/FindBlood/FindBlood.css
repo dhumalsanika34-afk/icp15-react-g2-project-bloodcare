@@ -1,0 +1,221 @@
+/* hero section */
+
+.find-blood-hero {
+  min-height: 180px;
+  padding: 60px 80px;
+  background:#FFE5BF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+.hero-text h1 {
+  font-size: 46px;
+  margin-bottom: 15px;
+  max-width: 650px;
+}
+
+.hero-text  p {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 600px;
+}
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blood-icon{
+    font-size: 100px;
+    background-color: rgb(175, 161, 161);
+    border-radius: 50%;
+}
+button{
+    background-color:#f62440;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 0;
+}
+/* search */
+
+.search-container {
+  width: 84%;
+  max-width: 1100px;
+  margin: -45px auto 0;
+  position: relative;
+  z-index: 2;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.search-header {
+  margin-bottom: 25px;
+}
+
+.search-header h2 {
+  font-size: 25px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.search-header p {
+  opacity: 0.6;
+}
+
+.search-box {
+  display: flex;
+  max-width: 1000px;
+  gap: 30px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.input-group label {
+  font-weight: 600;
+}
+
+.input-group select,
+.input-group input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: #fff;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #c1121f;
+}
+
+/* ================= RESULTS ================= */
+
+.blood-results {
+  width: 84%;
+  max-width: 1100px;
+  margin: 55px auto 0;
+}
+
+.result-heading {
+  margin-bottom: 25px;
+}
+
+.result-heading h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.result-heading p {
+  color: #777;
+}
+
+
+/* ================= CARDS ================= */
+
+.blood-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+
+
+.blood-card button {
+  width: 100%;
+  border: none;
+  padding: 13px;
+
+  border-radius: 8px;
+
+  background: #c1121f;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.blood-card button:hover {
+  background: #8f0913;
+}
+
+
+/* ================= NO RESULT ================= */
+
+.no-result {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+.no-result h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.no-result p {
+  color: #777;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .blood-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .find-blood-hero {
+    padding: 45px 7%;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .blood-icon {
+    display: none;
+  }
+
+  .search-container,
+  .blood-results {
+    width: 90%;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .blood-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

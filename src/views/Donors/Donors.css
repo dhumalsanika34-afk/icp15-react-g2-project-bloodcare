@@ -50,3 +50,422 @@
     transform: translateY(-25px);
   }
 }
+/* ================= DONOR PAGE ================= */
+
+.donor-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+
+  width: 90%;
+  max-width: 1150px;
+
+  margin: 40px auto;
+}
+
+
+/* ================= DONOR FORM ================= */
+
+.donor-form-container {
+  flex: 1;
+
+  background: #ffffff;
+  padding: 38px;
+
+  border-radius: 20px;
+
+  border-top: 4px solid #f62440;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
+  box-sizing: border-box;
+}
+
+
+/* ================= FORM HEADING ================= */
+
+.form-heading {
+  margin-bottom: 28px;
+}
+
+.form-heading h2 {
+  margin: 0;
+  margin-bottom: 7px;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #2d2d2d;
+}
+
+.form-heading p {
+  margin: 0;
+
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* ================= FORM FLEX LAYOUT ================= */
+
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+
+  width: calc(50% - 9px);
+}
+
+.input-group label {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #333;
+}
+
+
+/* ================= INPUTS ================= */
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 9px;
+
+  background: #fff;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #e63946;
+
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+}
+
+
+/* ================= FULL WIDTH DATE ================= */
+
+.full-width {
+  width: 100%;
+}
+
+
+/* ================= ELIGIBILITY NOTE ================= */
+
+.eligibility-note {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 25px;
+  padding: 16px;
+
+  background: #fff6f6;
+
+  border-left: 4px solid #d62828;
+
+  border-radius: 10px;
+}
+
+.eligibility-note span {
+  font-size: 20px;
+}
+
+.eligibility-note p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ================= REGISTER BUTTON ================= */
+
+.register-btn {
+  width: 100%;
+
+  margin-top: 24px;
+  padding: 15px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: linear-gradient(
+    90deg,
+    #c91825,
+    #ef3347
+  );
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 22px rgba(214, 40, 40, 0.25);
+}
+
+
+/* ================= SUCCESS MESSAGE ================= */
+
+.success-message {
+  margin-bottom: 20px;
+  padding: 14px;
+
+  background: #e8f8ee;
+
+  color: #267a42;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+
+/* ================= BASIC ELIGIBILITY CARD ================= */
+
+.eligibility-container {
+  width: 360px;
+
+  /* VERY IMPORTANT */
+  align-self: flex-start;
+
+  flex-shrink: 0;
+
+  background: #ffffff;
+
+  padding: 32px;
+
+  border-radius: 20px;
+
+  border-top: 4px solid #f62440;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
+  box-sizing: border-box;
+}
+
+
+/* ================= ELIGIBILITY HEADING ================= */
+
+.eligibility-container h2 {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: 26px;
+
+  color: #2d2d2d;
+}
+
+
+/* ================= ELIGIBILITY LIST ================= */
+
+.eligibility-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+.eligibility-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 14px;
+}
+
+
+/* ================= CHECK ICON ================= */
+
+.eligibility-item span {
+  min-width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffe8e8;
+
+  color: #d62828;
+
+  font-weight: bold;
+}
+
+
+/* ================= ELIGIBILITY TEXT ================= */
+
+.eligibility-item h4 {
+  margin: 0 0 5px;
+
+  font-size: 15px;
+
+  color: #333;
+}
+
+.eligibility-item p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* ================= QUOTE ================= */
+
+.eligibility-quote {
+  margin-top: 30px;
+
+  padding: 20px 15px;
+
+  text-align: center;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #fff4f4,
+    #ffe3e3
+  );
+}
+
+.eligibility-quote h3 {
+  margin: 0 0 8px;
+
+  font-size: 17px;
+
+  font-style: italic;
+
+  color: #9f2020;
+}
+
+.eligibility-quote p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #666;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 950px) {
+
+  .donor-content {
+    flex-direction: column;
+
+    width: 90%;
+  }
+
+  .donor-form-container {
+    width: 100%;
+  }
+
+  .eligibility-container {
+    width: 100%;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+  .donor-content {
+    width: 92%;
+
+    margin: 25px auto;
+
+    gap: 25px;
+  }
+
+  .donor-form-container,
+  .eligibility-container {
+    padding: 25px 20px;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .form-heading h2 {
+    font-size: 25px;
+  }
+
+  .eligibility-container h2 {
+    font-size: 24px;
+  }
+}
+/* Tips */
+
+.tips-head{
+    text-align: center;
+    margin-top: 100px;
+}
+.tips-para{
+       text-align: center;
+       font-size: 18px; 
+       margin: 30px;
+       line-height: 30px;
+}
+.list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+.list-elements{
+    height: 280px;
+    width: 380px;
+    box-shadow: 5px 5px 10px rgb(203, 164, 164);;
+}
+.tips-listhead{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom:1px solid gray ;
+}
+.tips-list{
+    font-size: 18px;
+    line-height: 20px;
+    padding: 12px 5px;
+}
