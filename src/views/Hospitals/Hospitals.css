@@ -1,0 +1,238 @@
+.hospital-page {
+  min-height: 100vh;
+
+  padding: 50px 7%;
+
+  background: #fff7f8;
+}
+
+
+/* Heading */
+
+.hospital-heading {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.hospital-title {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #d90429;
+
+  font-size: 30px;
+
+  font-weight: bold;
+}
+
+.hospital-title img {
+  width: 28px;
+
+  height: 28px;
+
+  object-fit: contain;
+}
+
+.hospital-heading h1 {
+  margin: 10px 0;
+
+  font-size: 38px;
+
+  color: #222;
+}
+
+.hospital-heading p {
+  color: #666;
+}
+
+
+/* Filters */
+
+.hospital-filters {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+}
+
+
+/* Search */
+
+.hospital-search {
+  width: 350px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px 15px;
+
+  background: white;
+
+  border: 1px solid #f0cdd2;
+
+  border-radius: 8px;
+}
+
+.hospital-search img {
+  width: 20px;
+
+  height: 20px;
+
+  object-fit: contain;
+}
+
+.hospital-search input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+}
+
+
+/* Select */
+
+.hospital-filters select {
+  padding: 12px 15px;
+
+  background: white;
+
+  border: 1px solid #f0cdd2;
+
+  border-radius: 8px;
+
+  outline: none;
+}
+
+
+/* Emergency */
+
+.emergency-filter {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.emergency-filter input {
+  accent-color: #d90429;
+}
+
+.emergency-filter img {
+  width: 20px;
+
+  height: 20px;
+
+  object-fit: contain;
+}
+
+
+/* Result */
+
+.hospital-result {
+  color: #666;
+
+  font-size: 14px;
+}
+
+.hospital-result strong {
+  color: #d90429;
+}
+
+
+/* Grid */
+
+.hospital-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+/* No Result */
+
+.no-hospital {
+  grid-column: 1 / -1;
+
+  padding: 50px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 14px;
+}
+
+.no-hospital img {
+  width: 60px;
+
+  height: 60px;
+
+  object-fit: contain;
+}
+
+.no-hospital h3 {
+  color: #d90429;
+}
+
+.no-hospital p {
+  color: #666;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .hospital-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hospital-page {
+    padding: 30px 15px;
+  }
+
+  .hospital-heading h1 {
+    font-size: 28px;
+  }
+
+  .hospital-search {
+    width: 100%;
+  }
+
+  .hospital-filters select {
+    width: 100%;
+  }
+
+  .hospital-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

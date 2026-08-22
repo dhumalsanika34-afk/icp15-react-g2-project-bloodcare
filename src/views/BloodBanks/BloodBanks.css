@@ -1,0 +1,43 @@
+.bloodbanks-container {
+  background-color: #fffaF3;
+  padding: 2rem;
+}
+
+.bloodbanks-container h2 {
+  text-align: center;
+  color: #F62440;
+  margin-bottom: 2rem;
+}
+
+.bloodbanks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.bloodbank-card {
+  background-color: #FFE5BF;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.bloodbank-card h3 {
+  color: #F62440;
+  margin-bottom: 0.5rem;
+}
+
+.bloodbank-card button {
+  margin-top: 1rem;
+  background-color: #F62440;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bloodbank-card button:hover {
+  background-color: #d81c35;
+}

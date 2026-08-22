@@ -1,0 +1,38 @@
+.footer {
+  background: #fff2db;
+  padding-top: 45px;
+  color: #333;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 0 8% 40px;
+}
+
+.footer h2 {
+  color: #f62440;
+}
+
+.footer h3 {
+  color: #f62440;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
+  color: #444;
+  margin: 9px 0;
+}
+
+.footer a:hover {
+  color: #f62440;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 18px;
+  background: #ffe5bf;
+  font-size: 14px;
+}

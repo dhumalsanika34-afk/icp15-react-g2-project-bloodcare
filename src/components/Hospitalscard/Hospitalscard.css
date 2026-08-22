@@ -1,0 +1,151 @@
+.hospital-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #f1d5d9;
+  box-shadow: 0 5px 20px rgba(99, 27, 40, 0.09);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hospital-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(99, 27, 40, 0.15);
+}
+
+.hospital-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.hospital-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.hospital-card-content h3 {
+  margin: 0 0 14px;
+  color: #c1121f;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.hospital-card-content p {
+  margin: 0 0 10px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.hospital-city {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333 !important;
+  font-weight: 600;
+}
+
+.hospital-address {
+  min-height: 42px;
+}
+
+.hospital-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b27600 !important;
+  font-weight: 1000;
+}
+
+/* Icon Images */
+
+.icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.button-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* Emergency */
+
+.hospital-emergency,
+.hospital-regular {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hospital-emergency {
+  background: #ffe5e5;
+  color: #d62828;
+}
+
+.hospital-regular {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Blood Groups */
+
+.hospital-card-content h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0 10px;
+  color: #333;
+  font-size: 15px;
+}
+
+.blood-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 24px;
+}
+
+.blood-groups span {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #c1121f;
+  border: 1px solid #ffd0d0;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+
+.hospital-card .common-button {
+  margin-top: auto;
+  border-radius: 9px;
+  background: #c1121f;
+}
+
+.hospital-card .common-button:hover {
+  background: #9f101a;
+}
+
+@media (max-width: 600px) {
+  .hospital-card-content {
+    padding: 20px;
+  }
+
+  .hospital-card-image {
+    height: 190px;
+  }
+}
