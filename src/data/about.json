@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "badge": "ABOUT BLOODCARE",
+    "title": "Connecting Every Drop With a Life in Need.",
+    "description": "BloodCare is a smart blood management platform that connects donors, blood banks and hospitals to make life-saving blood available faster and more efficiently.",
+    "primaryButton": "Become a Donor",
+    "secondaryButton": "Explore Our Mission",
+    "image": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=1200&q=85"
+  },
+  "stats": [
+    {
+      "number": "10K+",
+      "label": "Active Donors",
+      "icon": "♥"
+    },
+    {
+      "number": "8K+",
+      "label": "Lives Supported",
+      "icon": "✚"
+    },
+    {
+      "number": "25+",
+      "label": "Blood Banks",
+      "icon": "◉"
+    },
+    {
+      "number": "98%",
+      "label": "Successful Requests",
+      "icon": "✓"
+    }
+  ],
+  "mission": {
+    "badge": "OUR MISSION",
+    "title": "Technology That Turns Compassion Into Action.",
+    "description": "We believe no patient should have to wait for blood when every second matters. BloodCare brings the entire blood donation ecosystem together through a simple, reliable and intelligent digital platform.",
+    "points": [
+      "Connect donors with people who need blood",
+      "Help blood banks manage inventory efficiently",
+      "Enable hospitals to raise urgent blood requests",
+      "Reduce delays and unnecessary blood wastage"
+    ]
+  },
+  "impact": {
+    "badge": "OUR IMPACT",
+    "title": "Small Donations. Big Difference.",
+    "description": "Every donation creates a chain of hope. Together, our community is building a faster and more connected blood-care network."
+  },
+  "cta": {
+    "title": "Your Blood Can Be Someone's Second Chance.",
+    "description": "One simple decision can make a life-saving difference.",
+    "button": "Donate Blood Today"
+  }
+}
