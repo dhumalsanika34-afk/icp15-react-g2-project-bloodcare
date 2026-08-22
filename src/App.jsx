@@ -1,11 +1,11 @@
-import React from "react";
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Contact from "./views/Contact/Contact";
+import aboutData from "./data/about.json";
 
 function App() {
   const path = window.location.pathname;
-  console.log["current Path means current route:", path];
+  console.log("current Path means current route:", path);
   if (path === "/") {
     return (
       <>
@@ -19,7 +19,7 @@ function App() {
     return (
       <>
       
-        <About />
+        <About about={aboutData} />
        
       </>
     );
@@ -33,6 +33,6 @@ function App() {
       </>
     );
   }
-
+  
 }
 export default App
