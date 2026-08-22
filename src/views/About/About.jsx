@@ -1,5 +1,4 @@
 import aboutData from "../../data/about.json";
-import heroImage from "../../assets/hero.png";
 import "./About.css";
 import React from "react";
 
@@ -152,7 +151,7 @@ const About = () => {
 
           <div className="mission-points">
 
-            {mission.points.map((point, index) => (
+            {mission.points.map((point) => (
               <div className="mission-point" key={point}>
 
                 <div className="check">
