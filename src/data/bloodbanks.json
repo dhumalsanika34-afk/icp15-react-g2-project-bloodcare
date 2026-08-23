@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Red Cross Blood Bank",
+    "location": "Pune, MH",
+    "contact": "9876543210"
+  },
+  {
+    "id": 2,
+    "name": "LifeCare Blood Bank",
+    "location": "Mumbai, MH",
+    "contact": "9123456780"
+  },
+  {
+    "id": 3,
+    "name": "VitalFlow Blood Bank",
+    "location": "Nagpur, MH",
+    "contact": "9988776655"
+  },
+  {
+    "id": 4,
+    "name": "HemoLink Blood Bank",
+    "location": "Aurangabad, MH",
+    "contact": "9765432109"
+  }
+]
