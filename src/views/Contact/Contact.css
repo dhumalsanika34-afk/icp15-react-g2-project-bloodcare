@@ -1,0 +1,1225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fffafa;
+  color: #351b1e;
+}
+
+.bloodcare-contact {
+  overflow: hidden;
+  background: #fffafa;
+}
+
+
+/* ================= HERO ================= */
+
+.contactHero {
+  min-height: 680px;
+
+  padding: 90px 8%;
+
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+
+  align-items: center;
+
+  gap: 80px;
+
+  background: #fff1f2;
+}
+
+.heroText {
+  max-width: 700px;
+}
+
+.bloodTag {
+  color: #c1121f;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.bloodTag span {
+  font-size: 17px;
+}
+
+.heroText h1 {
+  margin-top: 25px;
+
+  font-size: clamp(50px, 6vw, 82px);
+
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+
+  color: #351b1e;
+}
+
+.heroText h1 span {
+  color: #c1121f;
+}
+
+.heroText > p {
+  max-width: 650px;
+
+  margin-top: 30px;
+
+  color: #705d60;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+.heroButtons {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  margin-top: 38px;
+}
+
+.redButton {
+  padding: 17px 28px;
+
+  color: white;
+
+  background: #c1121f;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  box-shadow: 0 12px 30px rgba(193, 18, 31, 0.22);
+
+  transition: 0.3s;
+}
+
+.redButton:hover {
+  background: #9f0f19;
+
+  transform: translateY(-3px);
+}
+
+.simpleButton {
+  color: #451f23;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  border-bottom: 2px solid #c1121f;
+
+  padding-bottom: 5px;
+}
+
+
+/* HERO VISUAL */
+
+.heroVisual {
+  height: 510px;
+
+  position: relative;
+}
+
+.mainHeroImage {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: 220px 220px 25px 25px;
+
+  border: 8px solid white;
+
+  box-shadow: 0 25px 60px rgba(60, 10, 15, 0.15);
+}
+
+.mainHeroImage img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.heroCircle {
+  position: absolute;
+
+  top: 25px;
+  right: -25px;
+
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: #c1121f;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+
+  box-shadow: 0 10px 25px rgba(193, 18, 31, 0.3);
+}
+
+.heroInfo {
+  position: absolute;
+
+  left: -50px;
+  bottom: 30px;
+
+  padding: 20px 28px;
+
+  background: white;
+
+  border-radius: 10px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+.heroInfo strong {
+  display: block;
+
+  color: #c1121f;
+
+  font-size: 18px;
+}
+
+.heroInfo span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #6f5d5f;
+
+  font-size: 12px;
+}
+
+
+/* ================= CONTACT STRIP ================= */
+
+.contactStrip {
+  padding: 0 8%;
+
+  min-height: 150px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  align-items: center;
+
+  gap: 35px;
+
+  background: white;
+
+  border-bottom: 1px solid #f0dfe1;
+}
+
+.contactStripTitle span {
+  color: #c1121f;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.contactStripTitle h2 {
+  margin-top: 8px;
+
+  font-size: 30px;
+}
+
+.contactItem {
+  min-height: 75px;
+
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  border-left: 1px solid #eadbde;
+
+  color: #351b1e;
+
+  text-decoration: none;
+}
+
+.contactItemIcon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #c1121f;
+
+  background: #fde8e9;
+
+  border-radius: 50%;
+
+  font-size: 20px;
+}
+
+.contactItem small {
+  display: block;
+
+  color: #c1121f;
+
+  font-size: 9px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+.contactItem strong {
+  display: block;
+
+  margin-top: 6px;
+
+  font-size: 14px;
+}
+
+.contactItem > b {
+  margin-left: auto;
+
+  color: #c1121f;
+
+  font-size: 22px;
+}
+
+
+/* ================= EMERGENCY ================= */
+
+.emergencySection {
+  margin: 55px 8%;
+
+  padding: 30px 38px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+
+  background: #c1121f;
+
+  color: white;
+
+  border-radius: 12px;
+}
+
+.emergencyLeft {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.emergencyIcon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #c1121f;
+
+  background: white;
+
+  border-radius: 50%;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.emergencyLeft span {
+  color: #ffd7da;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  letter-spacing: 1.5px;
+}
+
+.emergencyLeft h2 {
+  margin-top: 5px;
+
+  font-size: 25px;
+}
+
+.emergencyLeft h2 b {
+  color: #ffd7da;
+}
+
+.emergencyLeft p {
+  max-width: 650px;
+
+  margin-top: 7px;
+
+  color: #ffe8e9;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+.emergencySection > a {
+  margin-left: auto;
+
+  padding: 14px 24px;
+
+  color: #c1121f;
+
+  background: white;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+
+/* ================= MAIN CONTACT ================= */
+
+.mainContact {
+  padding: 90px 8%;
+
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 90px;
+
+  background: #fffafa;
+}
+
+.redLabel {
+  color: #c1121f;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.contactSide h2 {
+  margin-top: 20px;
+
+  font-size: 60px;
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+}
+
+.contactSide h2 span {
+  color: #c1121f;
+}
+
+.contactSide > p {
+  max-width: 500px;
+
+  margin-top: 25px;
+
+  color: #756164;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+.helpPoints {
+  margin-top: 30px;
+}
+
+.helpPoints div {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 14px;
+}
+
+.helpPoints div > span {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: #c1121f;
+
+  border-radius: 50%;
+
+  font-size: 11px;
+}
+
+.helpPoints p {
+  font-size: 13px;
+
+  color: #523b3e;
+}
+
+
+/* PHOTO */
+
+.supportPhoto {
+  height: 120px;
+
+  margin-top: 35px;
+
+  display: flex;
+
+  overflow: hidden;
+
+  background: white;
+
+  border-radius: 10px;
+
+  border: 1px solid #eddfe1;
+}
+
+.supportPhoto img {
+  width: 150px;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.supportPhoto div {
+  padding: 25px;
+}
+
+.supportPhoto strong {
+  display: block;
+
+  color: #c1121f;
+
+  font-size: 14px;
+}
+
+.supportPhoto span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #776568;
+
+  font-size: 11px;
+}
+
+
+/* ================= FORM ================= */
+
+.contactFormBox {
+  padding: 42px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  border: 1px solid #ead9dc;
+
+  box-shadow: 0 20px 50px rgba(60, 10, 15, 0.06);
+}
+
+.formTwo {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+.formField {
+  margin-bottom: 20px;
+}
+
+.formField label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #4a3033;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 0.5px;
+}
+
+.formField input,
+.formField select,
+.formField textarea {
+  width: 100%;
+
+  padding: 15px;
+
+  color: #412a2d;
+
+  background: #fffafa;
+
+  border: 1px solid #e6d8da;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  transition: 0.2s;
+}
+
+.formField input:focus,
+.formField select:focus,
+.formField textarea:focus {
+  border-color: #c1121f;
+
+  background: white;
+
+  box-shadow: 0 0 0 4px rgba(193, 18, 31, 0.06);
+}
+
+.formField textarea {
+  resize: vertical;
+}
+
+.sendButton {
+  width: 100%;
+
+  padding: 17px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  color: white;
+
+  background: #c1121f;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.sendButton:hover {
+  background: #9f0f19;
+
+  transform: translateY(-2px);
+}
+
+.sendButton span {
+  margin-left: 10px;
+
+  font-size: 18px;
+}
+
+.privacyText {
+  margin-top: 13px;
+
+  text-align: center;
+
+  color: #968487;
+
+  font-size: 10px;
+}
+
+
+/* SUCCESS */
+
+.successMessage {
+  margin-bottom: 22px;
+
+  padding: 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  background: #eef8f0;
+
+  border: 1px solid #c9e8cf;
+
+  border-radius: 7px;
+}
+
+.successMessage > div {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: #3c914e;
+
+  border-radius: 50%;
+}
+
+.successMessage strong {
+  display: block;
+
+  color: #286437;
+
+  font-size: 12px;
+}
+
+.successMessage p {
+  margin-top: 3px;
+
+  color: #56805f;
+
+  font-size: 10px;
+}
+
+
+/* ================= COMMUNITY ================= */
+
+.community {
+  padding: 100px 8%;
+
+  background: #fff1f2;
+}
+
+.communityHeading {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  gap: 80px;
+
+  margin-bottom: 45px;
+}
+
+.communityHeading span {
+  color: #c1121f;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.communityHeading h2 {
+  margin-top: 15px;
+
+  font-size: 50px;
+
+  line-height: 1;
+
+  letter-spacing: -1px;
+}
+
+.communityHeading h2 b {
+  color: #c1121f;
+}
+
+.communityHeading > p {
+  max-width: 430px;
+
+  align-self: flex-end;
+
+  color: #756164;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.communityGrid {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr 1fr;
+
+  gap: 16px;
+}
+
+.communityImage {
+  height: 320px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+}
+
+.communityImage.largeImage {
+  height: 390px;
+}
+
+.communityImage img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s;
+}
+
+.communityImage:hover img {
+  transform: scale(1.06);
+}
+
+.imageCaption {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 55px 25px 22px;
+
+  color: white;
+
+  background: linear-gradient(
+    transparent,
+    rgba(65, 5, 10, 0.85)
+  );
+}
+
+.imageCaption strong {
+  display: block;
+
+  font-size: 20px;
+}
+
+.imageCaption span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #ffe2e4;
+
+  font-size: 12px;
+}
+
+
+/* ================= LOCATION ================= */
+
+.locationSection {
+  padding: 100px 8%;
+
+  display: grid;
+
+  grid-template-columns: 0.75fr 1.25fr;
+
+  gap: 80px;
+
+  align-items: center;
+
+  background: white;
+}
+
+.locationInfo > span {
+  color: #c1121f;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.locationInfo h2 {
+  margin-top: 15px;
+
+  font-size: 52px;
+
+  line-height: 1;
+}
+
+.locationInfo h2 b {
+  color: #c1121f;
+}
+
+.locationInfo > p {
+  max-width: 430px;
+
+  margin-top: 20px;
+
+  color: #756164;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.locationDetail {
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+}
+
+.locationIcon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fde8e9;
+
+  border-radius: 50%;
+
+  font-size: 18px;
+}
+
+.locationDetail strong {
+  font-size: 13px;
+}
+
+.locationDetail p {
+  margin-top: 4px;
+
+  color: #806d6f;
+
+  font-size: 11px;
+}
+
+.mapContainer {
+  height: 450px;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  border: 7px solid #fff1f2;
+
+  box-shadow: 0 20px 50px rgba(50, 10, 15, 0.1);
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+}
+
+
+/* ================= FINAL ================= */
+
+.finalBanner {
+  max-width: 1150px;
+
+  margin: 0 auto 80px;
+
+  padding: 35px 42px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  background: #c1121f;
+
+  color: white;
+
+  border-radius: 12px;
+}
+
+.finalBlood {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: white;
+
+  border-radius: 50%;
+
+  font-size: 26px;
+}
+
+.finalBanner span {
+  color: #ffd5d8;
+
+  font-size: 9px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.finalBanner h2 {
+  margin-top: 6px;
+
+  font-size: 25px;
+}
+
+.finalBanner h2 b {
+  color: #ffd5d8;
+}
+
+.finalBanner a {
+  margin-left: auto;
+
+  padding: 14px 25px;
+
+  color: #c1121f;
+
+  background: white;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1050px) {
+
+  .contactHero {
+    grid-template-columns: 1fr;
+  }
+
+  .heroText {
+    text-align: center;
+    margin: auto;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .heroVisual {
+    width: 70%;
+    margin: auto;
+  }
+
+  .contactStrip {
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 8%;
+  }
+
+  .contactStripTitle {
+    grid-column: span 2;
+  }
+
+  .mainContact {
+    grid-template-columns: 1fr;
+  }
+
+  .locationSection {
+    grid-template-columns: 1fr;
+  }
+
+  .communityGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .communityImage.largeImage {
+    grid-column: span 2;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .contactHero,
+  .mainContact,
+  .community,
+  .locationSection {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .heroText h1 {
+    font-size: 48px;
+  }
+
+  .heroText > p {
+    font-size: 14px;
+  }
+
+  .heroVisual {
+    width: 90%;
+    height: 430px;
+  }
+
+  .heroInfo {
+    left: -10px;
+  }
+
+  .contactStrip {
+    grid-template-columns: 1fr;
+    padding: 35px 5%;
+  }
+
+  .contactStripTitle {
+    grid-column: auto;
+  }
+
+  .contactItem {
+    border-left: none;
+    border-top: 1px solid #eadbde;
+  }
+
+  .emergencySection {
+    margin: 40px 5%;
+
+    flex-wrap: wrap;
+  }
+
+  .emergencySection > a {
+    margin-left: 78px;
+  }
+
+  .contactSide h2 {
+    font-size: 48px;
+  }
+
+  .formTwo {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contactFormBox {
+    padding: 28px 22px;
+  }
+
+  .communityHeading {
+    display: block;
+  }
+
+  .communityHeading > p {
+    margin-top: 20px;
+  }
+
+  .communityGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .communityImage,
+  .communityImage.largeImage {
+    grid-column: auto;
+    height: 270px;
+  }
+
+  .locationInfo h2 {
+    font-size: 45px;
+  }
+
+  .mapContainer {
+    height: 350px;
+  }
+
+  .finalBanner {
+    margin: 0 5% 50px;
+
+    padding: 28px;
+
+    flex-wrap: wrap;
+  }
+
+  .finalBanner a {
+    margin-left: 0;
+
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .heroText h1 {
+    font-size: 40px;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+  }
+
+  .redButton,
+  .simpleButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heroVisual {
+    width: 100%;
+    height: 380px;
+  }
+
+  .contactStripTitle h2 {
+    font-size: 27px;
+  }
+
+  .emergencySection {
+    padding: 25px;
+  }
+
+  .emergencySection > a {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactSide h2 {
+    font-size: 42px;
+  }
+
+  .communityHeading h2 {
+    font-size: 40px;
+  }
+}

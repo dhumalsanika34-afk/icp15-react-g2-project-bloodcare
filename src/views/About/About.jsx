@@ -1,89 +1,101 @@
 import aboutData from "../../data/about.json";
 import "./About.css";
-import React from "react";
 
+const photoPaths = [
+  "/photo1.avif",
+  "/photo2.avif",
+  "/photo3.jpg",
+  "/photo4.jpg",
+  "/photo5.jpg",
+  "/photo6.jpg",
+  "/photo7.jpg",
+  "/photo8.jpg",
+  "/photo9.jpg",
+  "/photo10.jpg",
+];
 
-const About = () => {
-  const { hero, stats, mission, impact, cta } = aboutData;
+const getPhotoPath = (index) => photoPaths[index % photoPaths.length];
 
+function AboutCard({ item, imageSrc }) {
   return (
-    <main className="about-page">
+    <div className="about-card">
 
-      {/* ================= HERO ================= */}
+      <div className="card-image">
+        <img src={imageSrc} alt={item.title} />
+        <span>{item.category}</span>
+      </div>
+
+      <div className="card-content">
+        <h3>{item.title}</h3>
+
+        <p>{item.description}</p>
+
+        <div className="card-details">
+          {item.details}
+        </div>
+
+        
+      </div>
+
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div className="about-page">
+
+      {/* HERO */}
+
       <section className="about-hero">
-
-        <div className="hero-glow"></div>
 
         <div className="hero-content">
 
-          <div className="about-badge">
-            <span>♥</span>
-            {hero.badge}
+          <div className="hero-tag">
+            ❤️ ABOUT BLOODCARE
           </div>
 
           <h1>
-            {hero.title.split("Life").map((text, index) => (
-              <React.Fragment key={index}>
-                {text}
-                {index === 0 && (
-                  <span className="red-text">Life</span>
-                )}
-              </React.Fragment>
-            ))}
+            Every Drop Can
+            <span> Save a Life.</span>
           </h1>
 
-          <p>{hero.description}</p>
+          <p>
+            BloodCare is a digital platform that connects blood donors
+            with patients and families who need blood. We are working
+            towards making blood donation easier, faster and more
+            accessible for everyone.
+          </p>
 
           <div className="hero-buttons">
-            <button className="btn-primary">
-              {hero.primaryButton}
-              <span>→</span>
+            <a href="/contact" ><button className="primary-btn">
+              Become a Donor</button>
+            </a>
+
+            <button className="secondary-btn">
+              Find Blood
             </button>
-
-            <button className="btn-outline">
-              {hero.secondaryButton}
-            </button>
-          </div>
-
-          <div className="hero-trust">
-            <div className="avatar-group">
-              <span>👩</span>
-              <span>👨</span>
-              <span>👩</span>
-              <span>👨</span>
-            </div>
-
-            <div>
-              <strong>10,000+ donors</strong>
-              <small>already making a difference</small>
-            </div>
           </div>
 
         </div>
 
+        <div className="hero-image">
 
-        <div className="hero-visual">
-
-          <div className="hero-circle"></div>
-
-          <div className="image-wrapper">
+          <div className="image-circle">
             <img
-              src="/photo2.avif"
-              alt="Blood donation"
+              src={photoPaths[0]}
+              alt="Blood Donation"
             />
           </div>
 
           <div className="floating-card top-card">
-            <div className="floating-icon">♥</div>
-            <div>
-              <strong>Every Drop</strong>
-              <small>Counts</small>
-            </div>
+            <strong>8+</strong>
+            <small>Blood Groups</small>
           </div>
 
           <div className="floating-card bottom-card">
-            <strong>1 Donation</strong>
-            <small>Can Save 3 Lives</small>
+            <strong>❤️</strong>
+            <small>Save Lives Together</small>
           </div>
 
         </div>
@@ -91,24 +103,186 @@ const About = () => {
       </section>
 
 
-      {/* ================= STATS ================= */}
+      {/* STATS */}
+
       <section className="stats-section">
 
-        <div className="stats-container">
+        <div className="stat-box">
+          <h2>8+</h2>
+          <p>Blood Groups</p>
+        </div>
 
-          {stats.map((item, index) => (
-            <div className="stat-item" key={item.label}>
+        <div className="stat-box">
+          <h2>24/7</h2>
+          <p>Emergency Support</p>
+        </div>
 
-              <div className={`stat-icon icon-${index}`}>
-                {item.icon}
-              </div>
+        <div className="stat-box">
+          <h2>100%</h2>
+          <p>Community Focused</p>
+        </div>
 
-              <div>
-                <h2>{item.number}</h2>
-                <p>{item.label}</p>
-              </div>
+        <div className="stat-box">
+          <h2>1</h2>
+          <p>Common Goal</p>
+        </div>
 
+      </section>
+
+
+      {/* WHO WE ARE */}
+
+      <section className="who-section">
+
+        <div className="who-image">
+
+          <img
+            src={photoPaths[1]}
+            alt="Blood Donation"
+          />
+
+          <div className="experience-card">
+            <strong>❤️</strong>
+            <p>
+              Helping people
+              <br />
+              when they need it most
+            </p>
+          </div>
+
+        </div>
+
+
+        <div className="who-content">
+
+          <span className="section-label">
+            WHO WE ARE
+          </span>
+
+          <h2>
+            Connecting People,
+            <span> Saving Lives.</span>
+          </h2>
+
+          <p>
+            BloodCare is created with one simple idea — no person
+            should struggle to find blood when they need it.
+          </p>
+
+          <p>
+            Our platform brings together blood donors, patients and
+            communities. It provides a simple way to search for
+            suitable donors according to blood group and requirement.
+          </p>
+
+          <div className="check-list">
+
+            <div>
+              <span>✓</span>
+              Easy donor searching
             </div>
+
+            <div>
+              <span>✓</span>
+              Support during emergencies
+            </div>
+
+            <div>
+              <span>✓</span>
+              Promote voluntary donation
+            </div>
+
+            <div>
+              <span>✓</span>
+              Build a helpful community
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* MISSION / VISION */}
+
+      <section className="mission-wrapper">
+
+        <div className="mission-card mission">
+
+          <div className="mission-icon">
+            🎯
+          </div>
+
+          <div>
+            <span>OUR MISSION</span>
+
+            <h2>Make Blood Donation Simple</h2>
+
+            <p>
+              Our mission is to simplify the process of finding
+              blood donors and encourage more people to participate
+              in voluntary blood donation.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div className="mission-card vision">
+
+          <div className="mission-icon">
+            👁️
+          </div>
+
+          <div>
+            <span>OUR VISION</span>
+
+            <h2>A Community That Cares</h2>
+
+            <p>
+              We want to create a strong blood donation community
+              where donors and patients can connect easily and
+              support each other.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ABOUT CARDS */}
+
+      <section className="information-section">
+
+        <div className="section-title">
+
+          <span className="section-label">
+            EXPLORE BLOODCARE
+          </span>
+
+          <h2>
+            What We Are
+            <span> All About</span>
+          </h2>
+
+          <p>
+            Learn more about our mission, vision, blood donation,
+            emergency support, donors and the community behind BloodCare.
+          </p>
+
+        </div>
+
+
+        <div className="cards-grid">
+
+          {aboutData.map((item, index) => (
+            <AboutCard
+              key={item.id}
+              item={item}
+              imageSrc={getPhotoPath(index)}
+            />
           ))}
 
         </div>
@@ -116,141 +290,127 @@ const About = () => {
       </section>
 
 
-      {/* ================= MISSION ================= */}
-      <section className="mission-section">
+      {/* TABLE */}
 
-        <div className="mission-image">
+      <section className="table-section">
 
-          <img
-            src="/photo1.avif"
-            alt="Medical team"
-          />
+        <div className="section-title">
 
-          <div className="experience-card">
-            <span>+</span>
-            <div>
-              <strong>Trusted</strong>
-              <small>Blood Care Network</small>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div className="mission-content">
-
-          <span className="section-badge">
-            {mission.badge}
+          <span className="section-label">
+            BLOODCARE INFORMATION
           </span>
 
-          <h2>{mission.title}</h2>
+          <h2>
+            Everything in
+            <span> One Place</span>
+          </h2>
 
-          <p className="mission-description">
-            {mission.description}
+          <p>
+            Detailed information about BloodCare and its major
+            features.
           </p>
 
-          <div className="mission-points">
+        </div>
 
-            {mission.points.map((point) => (
-              <div className="mission-point" key={point}>
 
-                <div className="check">
-                  ✓
-                </div>
+        <div className="table-wrapper">
 
-                <span>{point}</span>
+          <table>
 
-              </div>
-            ))}
+            <thead>
 
-          </div>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Image</th>
+                <th>Details</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              {aboutData.map((item, index) => (
+
+                <tr key={item.id}>
+
+                  <td>
+                    <div className="id-circle">
+                      {item.id}
+                    </div>
+                  </td>
+
+                  <td>
+                    <strong>{item.title}</strong>
+                  </td>
+
+                  <td>
+                    {item.description}
+                  </td>
+
+                  <td>
+                    <span className="category-badge">
+                      {item.category}
+                    </span>
+                  </td>
+
+                  <td>
+                    <img
+                      src={getPhotoPath(index)}
+                      alt={item.title}
+                    />
+                  </td>
+
+                  <td>
+                    {item.details}
+                  </td>
+
+                </tr>
+
+              ))}
+
+            </tbody>
+
+          </table>
 
         </div>
 
       </section>
 
 
-      {/* ================= IMPACT ================= */}
-      <section className="impact-section">
+      {/* CTA */}
 
-        <div className="impact-header">
+      <section className="cta-section">
 
-          <span className="section-badge">
-            {impact.badge}
+        <div>
+
+          <span>
+            BE A REASON SOMEONE SMILES TODAY ❤️
           </span>
 
-          <h2>{impact.title}</h2>
+          <h2>
+            Your Blood Can Give
+            Someone Another Chance.
+          </h2>
 
-          <p>{impact.description}</p>
+          <p>
+            One donation can make a meaningful difference.
+            Join the BloodCare community and become a part
+            of something bigger.
+          </p>
 
-        </div>
-
-
-        <div className="impact-cards">
-
-          <div className="impact-card red-card">
-            <span className="impact-number">01</span>
-            <div className="impact-symbol">♥</div>
-            <h3>Donate</h3>
-            <p>
-              Every healthy donor can become a reason
-              for someone to live another day.
-            </p>
-          </div>
-
-
-          <div className="impact-card white-card">
-            <span className="impact-number">02</span>
-            <div className="impact-symbol">✚</div>
-            <h3>Connect</h3>
-            <p>
-              We connect donors, blood banks and hospitals
-              through one simple platform.
-            </p>
-          </div>
-
-
-          <div className="impact-card dark-card">
-            <span className="impact-number">03</span>
-            <div className="impact-symbol">✓</div>
-            <h3>Save Lives</h3>
-            <p>
-              Faster access to blood means faster treatment
-              and better chances of recovery.
-            </p>
-          </div>
+         <a href="/contact"> <button>
+            Become a Blood Donor →
+          </button></a>
 
         </div>
 
       </section>
 
-
-      {/* ================= CTA ================= */}
-      <section className="about-cta">
-
-        <div className="cta-content">
-
-          <span>BE A HERO • SAVE A LIFE</span>
-
-          <h2>{cta.title}</h2>
-
-          <p>{cta.description}</p>
-
-          <button className="cta-button">
-            {cta.button}
-            <span>→</span>
-          </button>
-
-        </div>
-
-        <div className="cta-drop">
-          ♥
-        </div>
-
-      </section>
-
-    </main>
+    </div>
   );
-};
+}
 
 export default About;

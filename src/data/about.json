@@ -1,53 +1,98 @@
-{
-  "hero": {
-    "badge": "ABOUT BLOODCARE",
-    "title": "Connecting Every Drop With a Life in Need.",
-    "description": "BloodCare is a smart blood management platform that connects donors, blood banks and hospitals to make life-saving blood available faster and more efficiently.",
-    "primaryButton": "Become a Donor",
-    "secondaryButton": "Explore Our Mission",
-    "image": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=1200&q=85"
+[
+  {
+    "id": 1,
+    "title": "About BloodCare",
+    "description": "BloodCare is a digital platform created to connect blood donors with patients who need blood.",
+    "category": "Introduction",
+    "image": "/photo1.jpg",
+    "details": "The platform makes blood donor searching simple, organized and accessible for users."
   },
-  "stats": [
-    {
-      "number": "10K+",
-      "label": "Active Donors",
-      "icon": "♥"
-    },
-    {
-      "number": "8K+",
-      "label": "Lives Supported",
-      "icon": "✚"
-    },
-    {
-      "number": "25+",
-      "label": "Blood Banks",
-      "icon": "◉"
-    },
-    {
-      "number": "98%",
-      "label": "Successful Requests",
-      "icon": "✓"
-    }
-  ],
-  "mission": {
-    "badge": "OUR MISSION",
-    "title": "Technology That Turns Compassion Into Action.",
-    "description": "We believe no patient should have to wait for blood when every second matters. BloodCare brings the entire blood donation ecosystem together through a simple, reliable and intelligent digital platform.",
-    "points": [
-      "Connect donors with people who need blood",
-      "Help blood banks manage inventory efficiently",
-      "Enable hospitals to raise urgent blood requests",
-      "Reduce delays and unnecessary blood wastage"
-    ]
+  {
+    "id": 2,
+    "title": "Our Mission",
+    "description": "Our mission is to make blood donation and blood searching easier for everyone.",
+    "category": "Mission",
+    "image": "/photo2.jpg",
+    "details": "We aim to connect suitable donors with patients and reduce the time required to find blood."
   },
-  "impact": {
-    "badge": "OUR IMPACT",
-    "title": "Small Donations. Big Difference.",
-    "description": "Every donation creates a chain of hope. Together, our community is building a faster and more connected blood-care network."
+  {
+    "id": 3,
+    "title": "Our Vision",
+    "description": "Our vision is to create a strong community where people come forward to donate blood and help save lives.",
+    "category": "Vision",
+    "image": "/photo1.jpg",
+    "details": "We want to use technology to create a reliable and accessible blood donation network."
   },
-  "cta": {
-    "title": "Your Blood Can Be Someone's Second Chance.",
-    "description": "One simple decision can make a life-saving difference.",
-    "button": "Donate Blood Today"
+  {
+    "id": 4,
+    "title": "Why Blood Donation Matters",
+    "description": "Blood donation plays an important role in supporting patients during emergencies, surgeries and medical treatments.",
+    "category": "Awareness",
+    "image": "/photo2.jpg",
+    "details": "Regular voluntary blood donation helps maintain blood availability and supports people in critical situations."
+  },
+  {
+    "id": 5,
+    "title": "Helping Patients",
+    "description": "BloodCare helps patients and their families search for suitable blood donors according to their requirements.",
+    "category": "Support",
+    "image": "/photo1.jpg",
+    "details": "Users can search for potential donors and communicate with them when blood is required."
+  },
+  {
+    "id": 6,
+    "title": "Supporting Donors",
+    "description": "BloodCare provides a platform where willing donors can register and become part of the blood donation community.",
+    "category": "Donor ",
+    "image": "/photo2.jpg",
+    "details": "Registered donors can provide their basic information and help patients who require their blood group."
+  },
+  {
+    "id": 7,
+    "title": "Blood Groups",
+    "description": "BloodCare supports major blood groups such as A+, A-, B+, B-, AB+, AB-, O+ and O-.",
+    "category": " Information",
+    "image": "/photo1.jpg",
+    "details": "Correct blood group information helps users search for suitable donors more efficiently."
+  },
+  {
+    "id": 8,
+    "title": "Emergency Support",
+    "description": "BloodCare helps users search for potential donors when blood is urgently required.",
+    "category": "Emergency",
+    "image": "/photo2.jpg",
+    "details": "The platform aims to make donor searching faster and easier during emergency situations."
+  },
+  {
+    "id": 9,
+    "title": "Donor Registration",
+    "description": "People willing to donate blood can register themselves and provide their basic donor information.",
+    "category": "Registration",
+    "image": "/photo1.jpg",
+    "details": "Registration helps create a useful donor database that can support patients when blood is needed."
+  },
+  {
+    "id": 10,
+    "title": "Community",
+    "description": "BloodCare brings donors, patients and communities together through a common blood donation platform.",
+    "category": "Community",
+    "image": "/photo2.jpg",
+    "details": "A strong donor community can help improve blood availability and encourage voluntary donation."
+  },
+  {
+    "id": 11,
+    "title": "Technology",
+    "description": "BloodCare uses modern web technology to organize donor information and provide an easy-to-use platform.",
+    "category": "Technology",
+    "image": "/photo1.jpg",
+    "details": "The platform helps users access blood-related information in a simple and structured way."
+  },
+  {
+    "id": 12,
+    "title": "Our Goal",
+    "description": "Our goal is to make blood donation easier, faster and more accessible for everyone.",
+    "category": "Goal",
+    "image": "/photo2.jpg",
+    "details": "BloodCare aims to encourage more people to donate blood and help patients find suitable donors."
   }
-}
+]
