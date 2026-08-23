@@ -1,53 +1,124 @@
 {
-  "hero": {
-    "badge": "ABOUT BLOODCARE",
-    "title": "Connecting Every Drop With a Life in Need.",
-    "description": "BloodCare is a smart blood management platform that connects donors, blood banks and hospitals to make life-saving blood available faster and more efficiently.",
-    "primaryButton": "Become a Donor",
-    "secondaryButton": "Explore Our Mission",
-    "image": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=1200&q=85"
-  },
-  "stats": [
+  "aboutData": [
     {
-      "number": "10K+",
-      "label": "Active Donors",
-      "icon": "♥"
+      "id": 1,
+      "title": "Who We Are",
+      "subtitle": "About BloodCare",
+      "description": "BloodCare is a digital platform dedicated to connecting blood donors with people who need blood support.",
+      "content": "Our goal is to make blood donation awareness, donor information and blood-related resources easier to access.",
+      "highlight": "Connecting people. Saving lives.",
+      "category": "About Us",
+      "image": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "number": "8K+",
-      "label": "Lives Supported",
-      "icon": "✚"
+      "id": 2,
+      "title": "Our Mission",
+      "subtitle": "Saving Lives Together",
+      "description": "Our mission is to encourage voluntary blood donation and create awareness about the importance of donating blood.",
+      "content": "We want to build a responsible community where healthy donors come forward and support patients during their time of need.",
+      "highlight": "Every donor can become someone's hope.",
+      "category": "Mission",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "number": "25+",
-      "label": "Blood Banks",
-      "icon": "◉"
+      "id": 3,
+      "title": "Our Vision",
+      "subtitle": "A Better Tomorrow",
+      "description": "We imagine a future where people can find reliable blood support without unnecessary delay.",
+      "content": "Through technology, awareness and community participation, BloodCare aims to contribute towards a stronger blood donation ecosystem.",
+      "highlight": "A future where blood is available when needed.",
+      "category": "Vision",
+      "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "number": "98%",
-      "label": "Successful Requests",
-      "icon": "✓"
+      "id": 4,
+      "title": "Blood Donation",
+      "subtitle": "A Precious Gift",
+      "description": "Blood donation is a simple act that can provide essential support to patients during medical emergencies and treatments.",
+      "content": "Eligible donors can donate blood through authorized blood banks and donation camps under proper medical supervision.",
+      "highlight": "Donate blood. Give someone another chance.",
+      "category": "Donation",
+      "image": "https://images.unsplash.com/photo-1615461066159-fea0e7d0c1d0?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 5,
+      "title": "Why Donate Blood?",
+      "subtitle": "Your Blood Matters",
+      "description": "Hospitals need blood for surgeries, accidents, treatments and many other medical situations.",
+      "content": "Regular voluntary donation helps maintain a dependable blood supply and supports healthcare services.",
+      "highlight": "Your small act can create a big impact.",
+      "category": "Awareness",
+      "image": "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 6,
+      "title": "Blood Groups",
+      "subtitle": "Know Your Blood Type",
+      "description": "Blood is commonly classified into A, B, AB and O groups with positive or negative Rh factors.",
+      "content": "Knowing your blood group is useful during emergencies and helps healthcare professionals identify compatible blood for transfusion.",
+      "highlight": "Know your blood group today.",
+      "category": "Knowledge",
+      "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 7,
+      "title": "Emergency Support",
+      "subtitle": "Help When It Matters",
+      "description": "During emergencies, timely access to suitable blood can be extremely important.",
+      "content": "BloodCare promotes donor awareness and encourages people to stay connected with the blood donation community.",
+      "highlight": "Be ready to help when someone needs you.",
+      "category": "Emergency",
+      "image": "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 8,
+      "title": "Donor Registration",
+      "subtitle": "Become A Donor",
+      "description": "Eligible people can register themselves as donors and become part of a community committed to helping others.",
+      "content": "A strong donor network can help spread awareness and encourage voluntary blood donation.",
+      "highlight": "Register. Donate. Save lives.",
+      "category": "Donor",
+      "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 9,
+      "title": "Blood Banks",
+      "subtitle": "Safe Blood Management",
+      "description": "Blood banks are essential for collecting, testing, storing and supplying blood for medical requirements.",
+      "content": "BloodCare encourages people to use authorized blood banks and follow proper healthcare guidance.",
+      "highlight": "Safe blood through responsible systems.",
+      "category": "Blood Bank",
+      "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 10,
+      "title": "Community Awareness",
+      "subtitle": "Spread The Message",
+      "description": "Awareness can help remove misconceptions and encourage more people to become voluntary blood donors.",
+      "content": "Students, organizations and communities can participate in awareness campaigns and donation activities.",
+      "highlight": "One message can inspire many donors.",
+      "category": "Community",
+      "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 11,
+      "title": "Safety & Responsibility",
+      "subtitle": "Donate Responsibly",
+      "description": "Blood donation should always take place through authorized healthcare professionals and proper medical procedures.",
+      "content": "Donors should provide accurate health information and follow instructions given by qualified medical staff.",
+      "highlight": "Safe donation is responsible donation.",
+      "category": "Safety",
+      "image": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": 12,
+      "title": "Join BloodCare",
+      "subtitle": "Be Someone's Hope",
+      "description": "You can support the cause by donating blood, spreading awareness or encouraging your friends and family to participate.",
+      "content": "Together, communities can create a stronger network of voluntary donors and promote the importance of blood donation.",
+      "highlight": "Together we can make a difference.",
+      "category": "Join Us",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80"
     }
-  ],
-  "mission": {
-    "badge": "OUR MISSION",
-    "title": "Technology That Turns Compassion Into Action.",
-    "description": "We believe no patient should have to wait for blood when every second matters. BloodCare brings the entire blood donation ecosystem together through a simple, reliable and intelligent digital platform.",
-    "points": [
-      "Connect donors with people who need blood",
-      "Help blood banks manage inventory efficiently",
-      "Enable hospitals to raise urgent blood requests",
-      "Reduce delays and unnecessary blood wastage"
-    ]
-  },
-  "impact": {
-    "badge": "OUR IMPACT",
-    "title": "Small Donations. Big Difference.",
-    "description": "Every donation creates a chain of hope. Together, our community is building a faster and more connected blood-care network."
-  },
-  "cta": {
-    "title": "Your Blood Can Be Someone's Second Chance.",
-    "description": "One simple decision can make a life-saving difference.",
-    "button": "Donate Blood Today"
-  }
+  ]
 }

@@ -1,53 +1,16 @@
-<<<<<<< HEAD
-=======
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
 
->>>>>>> a773cbf3d3b17613f90d4b40a4700f2036031feb
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Login from "./views/Login/Login";
 import Signup from "./views/Signup/Signup";
 import Contact from "./views/Contact/Contact";
-<<<<<<< HEAD
-import aboutData from "./data/about.json";
-
-function App() {
-  const path = window.location.pathname;
-  console.log("current Path means current route:", path);
-  if (path === "/") {
-    return (
-      <>
-       
-        <Home />
-        
-      </>
-    );
-  }
-  else if (path === "/about") {
-    return (
-      <>
-      
-        <About about={aboutData} />
-       
-      </>
-    );
-  }
-  else if (path === "/contact") {
-    return (
-      <>
-       
-        <Contact />
-        
-      </>
-    );
-  }
-  
-=======
 import Doners from "./views/Donors/Donors";
 import Findblood from "./views/FindBlood/FindBlood";
+import Bloodbanks from "./views/BloodBanks/BloodBanks";
 import Hospitals from "./views/Hospitals/Hospitals";
 import Campaigns from "./views/Campaigns/Campaigns";
 import Bloodrequest from "./views/BloodRequest/BloodRequest";
@@ -74,15 +37,6 @@ function App() {
       <Footer />
     </>
   );
->>>>>>> a773cbf3d3b17613f90d4b40a4700f2036031feb
 }
 
 export default App;
-import Hospitals from "./views/Hospitals/Hospitals";
-import "./App.css";
-
-function App() {
-  return <Hospitals />;
-}
-
-export default App
