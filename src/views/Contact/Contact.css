@@ -1,3 +1,15 @@
+:root {
+  --blood-red: #f62440;
+  --blood-red-dark: #d91632;
+  --blood-cream: #fff2db;
+  --soft-cream: #fff8f2;
+  --background: #fffaf8;
+  --text: #2d1c1d;
+  --muted: #6a4d50;
+  --line: #f3dfe2;
+  --card: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +18,13 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #fffafa;
-  color: #351b1e;
+  background: var(--background);
+  color: var(--text);
 }
 
 .bloodcare-contact {
   overflow: hidden;
-  background: #fffafa;
+  background: var(--background);
 }
 
 
@@ -30,7 +42,7 @@ body {
 
   gap: 80px;
 
-  background: #fff1f2;
+  background: linear-gradient(135deg, #ffffff 0%, var(--soft-cream) 100%);
 }
 
 .heroText {
@@ -38,7 +50,7 @@ body {
 }
 
 .bloodTag {
-  color: #c1121f;
+  color: var(--blood-red);
 
   font-size: 13px;
   font-weight: bold;
@@ -63,7 +75,7 @@ body {
 }
 
 .heroText h1 span {
-  color: #c1121f;
+  color: var(--blood-red);
 }
 
 .heroText > p {
@@ -92,7 +104,7 @@ body {
 
   color: white;
 
-  background: #c1121f;
+  background: var(--blood-red);
 
   border-radius: 7px;
 
@@ -101,13 +113,13 @@ body {
   font-size: 14px;
   font-weight: bold;
 
-  box-shadow: 0 12px 30px rgba(193, 18, 31, 0.22);
+  box-shadow: 0 12px 30px rgba(246, 36, 64, 0.22);
 
   transition: 0.3s;
 }
 
 .redButton:hover {
-  background: #9f0f19;
+  background: var(--blood-red-dark);
 
   transform: translateY(-3px);
 }
@@ -120,7 +132,7 @@ body {
   font-size: 14px;
   font-weight: bold;
 
-  border-bottom: 2px solid #c1121f;
+  border-bottom: 2px solid var(--blood-red);
 
   padding-bottom: 5px;
 }
@@ -169,7 +181,7 @@ body {
 
   color: white;
 
-  background: #c1121f;
+  background: var(--blood-red);
 
   border-radius: 50%;
 
@@ -196,7 +208,7 @@ body {
 .heroInfo strong {
   display: block;
 
-  color: #c1121f;
+  color: var(--blood-red);
 
   font-size: 18px;
 }
@@ -232,7 +244,7 @@ body {
 }
 
 .contactStripTitle span {
-  color: #c1121f;
+  color: var(--blood-red);
 
   font-size: 10px;
   font-weight: bold;
@@ -271,7 +283,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  color: #c1121f;
+  color: var(--blood-red);
 
   background: #fde8e9;
 
@@ -283,7 +295,7 @@ body {
 .contactItem small {
   display: block;
 
-  color: #c1121f;
+  color: var(--blood-red);
 
   font-size: 9px;
   font-weight: bold;
@@ -302,7 +314,7 @@ body {
 .contactItem > b {
   margin-left: auto;
 
-  color: #c1121f;
+  color: var(--blood-red);
 
   font-size: 22px;
 }
@@ -320,7 +332,7 @@ body {
 
   gap: 22px;
 
-  background: #c1121f;
+  background: var(--blood-red);
 
   color: white;
 
@@ -390,7 +402,7 @@ body {
 
   padding: 14px 24px;
 
-  color: #c1121f;
+  color: var(--blood-red);
 
   background: white;
 
@@ -420,7 +432,7 @@ body {
 }
 
 .redLabel {
-  color: #c1121f;
+  color: var(--blood-red);
 
   font-size: 11px;
   font-weight: bold;
@@ -439,7 +451,7 @@ body {
 }
 
 .contactSide h2 span {
-  color: #c1121f;
+  color: var(--blood-red);
 }
 
 .contactSide > p {
@@ -477,7 +489,7 @@ body {
 
   color: white;
 
-  background: #c1121f;
+  background: var(--blood-red);
 
   border-radius: 50%;
 
@@ -523,7 +535,7 @@ body {
 .supportPhoto strong {
   display: block;
 
-  color: #c1121f;
+  color: var(--blood-red);
 
   font-size: 14px;
 }
@@ -605,11 +617,11 @@ body {
 .formField input:focus,
 .formField select:focus,
 .formField textarea:focus {
-  border-color: #c1121f;
+  border-color: var(--blood-red);
 
   background: white;
 
-  box-shadow: 0 0 0 4px rgba(193, 18, 31, 0.06);
+  box-shadow: 0 0 0 4px rgba(246, 36, 64, 0.06);
 }
 
 .formField textarea {
@@ -627,7 +639,7 @@ body {
 
   color: white;
 
-  background: #c1121f;
+  background: var(--blood-red);
 
   font-size: 14px;
   font-weight: bold;
@@ -638,7 +650,7 @@ body {
 }
 
 .sendButton:hover {
-  background: #9f0f19;
+  background: var(--blood-red-dark);
 
   transform: translateY(-2px);
 }

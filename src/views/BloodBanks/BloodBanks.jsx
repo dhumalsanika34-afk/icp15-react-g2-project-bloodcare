@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./BloodBanks.css";
-import bloodbanksData from "../data/bloodbanks.json";
+import bloodbanksData from "../../data/bloodbanks.json";
 
 const BloodBanks = () => {
   const [bloodbanks, setBloodbanks] = useState([]);

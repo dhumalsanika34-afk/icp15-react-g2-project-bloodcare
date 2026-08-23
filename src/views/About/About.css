@@ -1,11 +1,22 @@
+:root {
+  --blood-red: #f62440;
+  --blood-red-dark: #d91632;
+  --blood-cream: #fff2db;
+  --soft-cream: #fff8f2;
+  --text: #1d1d1d;
+  --muted: #666;
+  --card: #ffffff;
+  --line: #f9e5e8;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .about-page {
   width: 100%;
-  background: #fff;
-  color: #222;
+  background: linear-gradient(180deg, #ffffff 0%, #fffaf5 100%);
+  color: var(--text);
   font-family: Arial, sans-serif;
 }
 
@@ -19,8 +30,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  background:
-    linear-gradient(135deg, #fff 55%, #fff3f3 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--soft-cream) 100%);
 }
 
 .hero-content {
@@ -31,8 +41,8 @@
   display: inline-block;
   padding: 9px 17px;
   border-radius: 30px;
-  background: #ffe8e8;
-  color: #d62828;
+  background: var(--blood-cream);
+  color: var(--blood-red);
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -48,13 +58,13 @@
 
 .hero-content h1 span {
   display: block;
-  color: #d62828;
+  color: var(--blood-red);
 }
 
 .hero-content p {
   font-size: 18px;
   line-height: 1.8;
-  color: #666;
+  color: var(--muted);
   margin-bottom: 30px;
 }
 
@@ -75,24 +85,24 @@
 
 .primary-btn {
   border: none;
-  background: #d62828;
+  background: var(--blood-red);
   color: white;
-  box-shadow: 0 8px 20px rgba(214, 40, 40, 0.25);
+  box-shadow: 0 8px 20px rgba(246, 36, 64, 0.25);
 }
 
 .primary-btn:hover {
-  background: #b71c1c;
+  background: var(--blood-red-dark);
   transform: translateY(-2px);
 }
 
 .secondary-btn {
   background: white;
-  color: #d62828;
-  border: 1px solid #d62828;
+  color: var(--blood-red);
+  border: 1px solid var(--blood-red);
 }
 
 .secondary-btn:hover {
-  background: #fff0f0;
+  background: #fff3f5;
 }
 
 
@@ -130,7 +140,7 @@
 }
 
 .floating-card strong {
-  color: #d62828;
+  color: var(--blood-red);
   font-size: 24px;
 }
 
@@ -176,7 +186,7 @@
 .stat-box h2 {
   margin: 0;
   font-size: 32px;
-  color: #d62828;
+  color: var(--blood-red);
 }
 
 .stat-box p {
@@ -231,7 +241,7 @@
 }
 
 .section-label {
-  color: #d62828;
+  color: var(--blood-red);
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -246,7 +256,7 @@
 
 .who-content h2 span,
 .section-title h2 span {
-  color: #d62828;
+  color: var(--blood-red);
 }
 
 .who-content p {
