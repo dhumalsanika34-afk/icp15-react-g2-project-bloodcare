@@ -1,21 +1,6 @@
 import aboutData from "../../data/about.json";
 import "./About.css";
 
-const photoPaths = [
-  "/photo1.avif",
-  "/photo2.avif",
-  "/photo3.jpg",
-  "/photo4.jpg",
-  "/photo5.jpg",
-  "/photo6.jpg",
-  "/photo7.jpg",
-  "/photo8.jpg",
-  "/photo9.jpg",
-  "/photo10.jpg",
-];
-
-const getPhotoPath = (index) => photoPaths[index % photoPaths.length];
-
 function AboutCard({ item, imageSrc }) {
   return (
     <div className="about-card">
@@ -83,7 +68,7 @@ function About() {
 
           <div className="image-circle">
             <img
-              src={photoPaths[0]}
+              src="/photo1.avif"
               alt="Blood Donation"
             />
           </div>
@@ -137,7 +122,7 @@ function About() {
         <div className="who-image">
 
           <img
-            src={photoPaths[1]}
+            src="/photo2.avif"
             alt="Blood Donation"
           />
 
@@ -281,7 +266,7 @@ function About() {
             <AboutCard
               key={item.id}
               item={item}
-              imageSrc={getPhotoPath(index)}
+              imageSrc={index % 2 === 0 ? "/photo1.avif" : "/photo2.avif"}
             />
           ))}
 
@@ -358,7 +343,7 @@ function About() {
 
                   <td>
                     <img
-                      src={getPhotoPath(index)}
+                      src={index % 2 === 0 ? "/photo1.avif" : "/photo2.avif"}
                       alt={item.title}
                     />
                   </td>
